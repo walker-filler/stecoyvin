@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'house/styles.css' %}">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mooli&display=swap"
+      rel="stylesheet"
+    />
+    <title>STECOYVIN ESTATE</title>
+  </head>
+  <body>
+    <div class="mat">
+      <div class="steph">
+        <ul>
+          <li><a href="active">HOME</a></li>
+          <li><a href="#adout">ABOUT</a></li>
+          <li><a href="#house">HOUSE</a></li>
+          <li><a href="#apartment">APARTMENT</a></li>
+          <li><a href="#land">LAND</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+
+      <div class="coy">
+        <h1>STECOYVIN ESTATE COMPANY</h1>
+        <p>
+          Really nice and lovely place to get your dream House or an Apartment
+          and affordable Land
+        </p>
+      </div>
+    </div>
+    <section class="about">
+      <div class="may">
+        <h2>ABOUT</h2>
+        <p>
+          Stecoyvin Estate was established in 2018 by Mr and Mrs Owusu Walker
+          with just one apartment building, now the Company is having Hundreds
+          of Houses and Apartment building all over Ghana Stecoyvin also sells
+          Land.
+        </p>
+      </div>
+    </section>
+
+    <section id="house">
+      <div class="mat-one">
+        <h2>HOUSES</h2>
+        <p>We build Model House</p>
+      </div>
+      <div class="house-box">
+        {% for house in houses %}
+        <div class="steph-box">
+          <img src="images/walk-jpg.jpg" alt="" />
+          <div class="overlay"></div>
+          <div class="house-desc">
+            <h3>Two Bedroom House</h3>
+            <hr />
+            <p>With 24 hours security and Cleaning service</p>
+            <p>$150,ooo</p>
+          </div>
+        </div>
+        <div class="steph-box">
+          <img src="images/wp4372893.jpg" alt="" />
+          <div class="overlay"></div>
+          <div class="house-desc">
+            <h3>Four Bedroom House</h3>
+            <hr />
+            <p>With 24 hours security and Cleaning service</p>
+            <p>$200,000</p>
+          </div>
+        </div>
+        <div class="steph-box">
+          <img src="images/OIP.1cXyJGkZJl9T5vVvgAcd0wHaEh.jpeg" alt="" />
+          <div class="house-desc">
+            <h3>Six Bedroom House</h3>
+            <hr />
+            <p>With 24 hours security and Cleaning service</p>
+            <p>$550,000</p>
+          </div>
+          <div class="overlay"></div>
+        </div>
+        <div class="steph-box">
+          <img src="images/house-2.jpeg" alt="" />
+          <div class="house-desc">
+            <h3>Three Bedroom House</h3>
+            <hr />
+            <p>With 24 hours security and Cleaning service</p>
+            <p>$180,000</p>
+          </div>
+          <div class="overlay"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="apartment">
+      <div class="vin-box">
+        <p>APARTMENTS</p>
+        <h2>An affordable place to stay</h2>
+      </div>
+      <div class="apartment-box">
+        {% for apartment in apartments %}
+        <div class="vin-box">
+          <img src="images/apartments-1.webp" alt="" />
+          <div class="overlay"></div>
+          <div class="apartment-desc">
+            <h3>Two Room Apartment</h3>
+            <hr />
+            <p>24 hours security and with a playing ground</p>
+            <p>$800 a Month</p>
+          </div>
+        </div>
+        <div class="vin-box">
+          <img src="images/apartment-2.webp" alt="" />
+          <div class="overlay"></div>
+          <div class="apartment-desc">
+            <h3>three Room Apartment</h3>
+            <hr />
+            <p>24 hours security and with a playing ground</p>
+            <p>$1,000 a Month</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="land">
+      <div class="walk-box">
+        <h2>Land</h2>
+        <p>An Affordable Lands for Sale</p>
+      </div>
+      <div class="land-box">
+        {% for land in lands %}
+        <div class="may-box">
+          <img src="images/land-one.jpeg" alt="" />
+          <div class="overlay"></div>
+          <div class="land-desc">
+            <h3>Affordable for everyone</h3>
+            <hr />
+            <p>You can either play in full or installment</p>
+          </div>
+        </div>
+        <div class="may-box">
+          <img src="images/land-two.jpg" alt="" />
+          <div class="overlay"></div>
+          <div class="land">
+            <h3>Affordable for everyone</h3>
+            <hr />
+            <p>You can either play in full or installment</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer">
+      <div class="title-text">
+        <h2>CONTACT</h2>
+        <p>Visit our Office</p>
+      </div>
+      <div class="footer-row">
+        <div class="footer-left">
+          <h2>Opening Hours</h2>
+          <p><i class="fa fa-clock-o"></i>Monday to Friday - 10am to 6pm</p>
+          <p><i class="fa fa-clock-o"></i>Saturday - 7am to 5pm</p>
+          <p><i class="fa fa-clock-o"></i>Sunday - Close</p>
+        </div>
+        <div class="footer-right">
+          <h2>Get in Touch</h2>
+          <p>Accra - Plot 250 Block S<i class="fa fa-map-marker"></i></p>
+          <p>Kumasi - Plot 22 Block d<i class="fa fa-map-marker"></i></p>
+          <p>stecoyvin@gmail.com<i class="fa fa-paper-plane"></i></p>
+          <p>+23324265656<i class="fa fa-phone"></i></p>
+        </div>
+      </div>
+      <div class="social-links">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-youtube"></i>
+      </div>
+    </section>
+  </body>
+</html>

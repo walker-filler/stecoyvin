@@ -1,0 +1,326 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Mooli', sans-serif;
+}
+.mat {
+    background: url(images/house-1.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+.steph{
+    width: fit-content;
+    margin-left: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.steph ul li{
+    list-style: none;
+    font-display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.steph ul li{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.steph ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.steph ul li::after{
+content: 0;
+height: 3px;
+width: 0%;
+background: #009688;
+position: absolute;
+bottom: -10px;
+transition: 0.6s;
+}
+.steph ul li:hover:after{
+    width: 100%;
+}
+
+.coy{
+    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #009687bc;
+    border-radius: 8px;
+    text-align: center;
+    color: #fff;
+    margin: 30vh auto 0;
+    padding: 20px;
+    width: 90%;
+}
+.coy h1{
+    font-size: 80px;
+}
+.coy p{
+    font-size: 25px;
+    font-style: italic;
+}
+.about{
+    width: 100%;
+    padding: 70px 0;
+}
+.may{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.may p{
+margin: auto;
+font-size: 30px;
+font-weight: bold;
+}
+.may h2{
+    max-width: auto;
+    font-size: 50px;
+    font-weight: bold;
+    color: #009688;
+}
+.mat-one{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.mat-one p{
+    max-width: auto;
+    font-size: 50px;
+    font-weight: bold;
+    color: #009688;
+}
+#house{
+    width: 100%;
+    padding: 70px 0;
+    background: #efefef;
+}
+.house-box{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.steph-box{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 30px;
+    color: #fff;
+    position: relative;  
+}
+.steph-box img{
+width: 100%;
+border-radius: 7px;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0,0,0,0,5),#009688);
+    opacity: 0;
+    transition: 1s;
+}
+.steph-box:hover .overlay{
+    opacity: 1;
+}
+.house-desc{
+    width: 80%;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: 1s;
+}
+hr{
+    background: #ffffff64;
+    height: 3p;
+    border: 0;
+    margin: 15px auto;
+    width: 60%;
+    }
+    .steph-box:hover .house-desc{
+bottom: 40%;
+opacity: 1;
+}
+.vin-one p{
+    max-width: auto;
+    font-size: 50px;
+    font-weight: bold;
+    color: #009688;
+}
+#apartment{
+    width: 100%;
+    padding: 70px 0;
+    background: #009688;
+}
+.apartment-box{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.vin-box{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 30px;
+    color: #fff;
+    position: relative;  
+}
+.vin-box img{
+width: 100%;
+border-radius: 7px;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0,0,0,0,5),#009688);
+    opacity: 0;
+    transition: 1s;
+}
+.vin-box:hover .overlay{
+    opacity: 1;
+}
+.apartment-desc{
+    width: 80%;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: 1s;
+}
+hr{
+    background: #fff;
+    height: 3p;
+    border: 0;
+    margin: 15px auto;
+    width: 60%;
+    }
+.apartment-box:hover .apartment-desc{
+bottom: 40%;
+opacity: 1;
+    }
+    #land{
+        width: 100%;
+        padding: 70px 0;
+        background: #009688;
+    }
+    .land-box{
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: auto;
+    }
+    .walk-box{
+        flex-basis: 48%;
+        text-align: center;
+        border-radius: 7px;
+        margin-bottom: 30px;
+        color: #fff;
+        position: relative;
+    }
+    .may-one p{
+        max-width: auto;
+        font-size: 50px;
+        font-weight: bold;
+        color: #009688;
+    }
+    .may-box{
+        flex-basis: 48%;
+        text-align: center;
+        border-radius: 7px;
+        margin-bottom: 30px;
+        color: #fff;
+        position: relative;  
+    }
+    .may-box img{
+    width: 100%;
+    border-radius: 7px;
+    }
+    .overlay{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        border-radius: 7px;
+        cursor: pointer;
+        background: linear-gradient(rgba(0,0,0,0,5),#009688);
+        opacity: 0;
+        transition: 1s;
+    }
+    .may-box:hover .overlay{
+        opacity: 1;
+    }
+    .land-desc{
+        width: 80%;
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        opacity: 0;
+        transform: translateX(-50%);
+        transition: 1s;
+    }
+    hr{
+        background: #fff;
+        height: 3p;
+        border: 0;
+        margin: 15px auto;
+        width: 60%;
+        }
+    .land-box:hover .apartment-desc{
+    bottom: 40%;
+    opacity: 1;
+        }
+        #footer{
+            padding: 100px 0 20px;
+            background: #efefef;
+        }
+        .title-text{
+            max-width: auto;
+            font-size: 30px;
+            font-weight: bold;
+            color: #009688
+        }
+          .footer-row{
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+          }
+          .footer-left, .footer-right{
+            flex-basis: 45%;
+            padding: 10px;
+            margin-bottom: 20px;
+          }
+          .footer-right{
+            text-align: right;
+          }
+          .footer-row h2{
+            margin: 10px 0;
+          }
+          .footer-row p{
+            line-height: 35px;
+          }
+          .footer-left .fa,.footer-right .fa{
+            font-size: 20px;
+            color: #009688;
+            margin: 10px;
+          }
+          
+    
