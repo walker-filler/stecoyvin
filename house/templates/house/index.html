@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,7 +15,7 @@
     <div class="mat">
       <div class="steph">
         <ul>
-          <li><a href="active">HOME</a></li>
+          <li><a href="home">HOME</a></li>
           <li><a href="#adout">ABOUT</a></li>
           <li><a href="#house">HOUSE</a></li>
           <li><a href="#apartment">APARTMENT</a></li>
@@ -54,12 +55,13 @@
           <img src="images/walk-jpg.jpg" alt="" />
           <div class="overlay"></div>
           <div class="house-desc">
-            <h3>Two Bedroom House</h3>
+            <h3>{{ house.name }}</h3>
             <hr />
-            <p>With 24 hours security and Cleaning service</p>
-            <p>$150,ooo</p>
+            <p>{{ house.description }}</p>
+            <p>{{ house.price }}</p>
           </div>
         </div>
+        {% endfor %}
         <div class="steph-box">
           <img src="images/wp4372893.jpg" alt="" />
           <div class="overlay"></div>
@@ -104,12 +106,13 @@
           <img src="images/apartments-1.webp" alt="" />
           <div class="overlay"></div>
           <div class="apartment-desc">
-            <h3>Two Room Apartment</h3>
+            <h3>{{ apartment.name }}</h3>
             <hr />
-            <p>24 hours security and with a playing ground</p>
-            <p>$800 a Month</p>
+            <p>{{ apartment.description }}</p>
+            <p>{{ apartment.price }}</p>
           </div>
         </div>
+        {% endfor %}
         <div class="vin-box">
           <img src="images/apartment-2.webp" alt="" />
           <div class="overlay"></div>
@@ -134,11 +137,12 @@
           <img src="images/land-one.jpeg" alt="" />
           <div class="overlay"></div>
           <div class="land-desc">
-            <h3>Affordable for everyone</h3>
+            <h3>{{ land.name }}</h3>
             <hr />
-            <p>You can either play in full or installment</p>
+            <p>{{ land.description }}</p>
           </div>
         </div>
+        {% endfor %}
         <div class="may-box">
           <img src="images/land-two.jpg" alt="" />
           <div class="overlay"></div>
